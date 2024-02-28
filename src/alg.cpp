@@ -1,6 +1,6 @@
 #include <cstdint>
 #include "alg.h"
-#include <cmath>
+#include cmath.h
 
 bool chekPrime(uint64_t value) {
 	for (int i = 2; i <= sqrt(value); ++i) {
@@ -13,11 +13,11 @@ bool chekPrime(uint64_t value) {
 uint64_t nPrime(uint64_t n) {
 	uint64_t count = 0;
 	uint64_t num = 2;
-		while (count < n) {
-			if (chekPrime(num)) 
-				count++;
-		}
-		num++;
+	while (count < n) {
+		if (chekPrime(num)) 
+			count++;
+	}
+	num++;
 	return num - 1;
 }
 
@@ -33,7 +33,6 @@ uint64_t nextPrime(uint64_t value) {
 			}
 		}
 		if (isPrime) {
-
 			return nextPrime;
 		}
 		else {
@@ -41,7 +40,6 @@ uint64_t nextPrime(uint64_t value) {
 		}
 	}
 }
-
 
 uint64_t sumPrime(uint64_t hbound) {
 	int summa = 0;
