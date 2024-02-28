@@ -1,4 +1,4 @@
-#include <cstdint>
+//#include <cstdint>
 #include "alg.h"
 #include <cmath>
 
@@ -19,7 +19,7 @@ uint64_t nPrime(uint64_t n) {
 		}
 		num++;
 	}
-	cout << num - 1;
+	
 	return num - 1;
 }
 
@@ -35,7 +35,7 @@ uint64_t nextPrime(uint64_t value) {
 			}
 		}
 		if (isPrime) {
-			cout << "next prime " << nextPrime;
+
 			return nextPrime;
 		}
 		else {
@@ -53,7 +53,7 @@ uint64_t sumPrime(uint64_t hbound) {
 				summa += i;
 		}
 	}
-	cout << "sum prime " << summa;
+	
 	return summa;
 }
 
