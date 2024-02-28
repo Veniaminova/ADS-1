@@ -38,6 +38,7 @@ uint64_t nextPrime(uint64_t value) {
 	else {
 	    nextPrime++;
 	}
+    }
 }
 
 uint64_t sumPrime(uint64_t hbound) {
