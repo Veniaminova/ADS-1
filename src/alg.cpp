@@ -1,4 +1,4 @@
-//#include <cstdint>
+#include <cstdint>
 #include "alg.h"
 #include <cmath>
 
@@ -14,12 +14,10 @@ uint64_t nPrime(uint64_t n) {
 	uint64_t count = 0;
 	uint64_t num = 2;
 		while (count < n) {
-		if (chekPrime(num)) {
-			count++;
+			if (chekPrime(num)) 
+				count++;
 		}
 		num++;
-	}
-	
 	return num - 1;
 }
 
