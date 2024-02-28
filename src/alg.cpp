@@ -1,6 +1,6 @@
 #include <cstdint>
 #include "alg.h"
-#include <cmath.h>
+#include <cmath>
 
 bool chekPrime(uint64_t value) {
 	for (int i = 2; i <= sqrt(value); ++i) {
