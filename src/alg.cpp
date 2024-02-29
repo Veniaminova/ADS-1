@@ -1,9 +1,8 @@
-#include <cstdint>
 #include "alg.h"
 #include <cmath>
 
 bool chekPrime(uint64_t value) {
-	for (int i = 2; i*i <= value; ++i) {
+    	for (int i = 2; i * i <= value; ++i) {
 		if (value % i == 0){
 			return false;
 		}
