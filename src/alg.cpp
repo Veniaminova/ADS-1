@@ -1,7 +1,7 @@
 #include "alg.h"
 #include <cmath>
 
-bool chekPrime(uint64_t value) {
+bool checkPrime(uint64_t value) {
     	for (int i = 2; i * i <= value; ++i) {
 		if (value % i == 0){
 			return false;
@@ -9,12 +9,11 @@ bool chekPrime(uint64_t value) {
 	}
 	return true;
 }
-
 uint64_t nPrime(uint64_t n) {
     	uint64_t count = 0;
    	uint64_t num = 2;
     	while (count < n) {
-		if (chekPrime(num)){ 
+		if (checkPrime(num)){ 
 	    		count++;
 		}
     	}
@@ -30,7 +29,6 @@ uint64_t nextPrime(uint64_t value) {
 		num++;
 	}
 }
-
 uint64_t sumPrime(uint64_t hbound) {
     	uint64_t sum = 0;
 	for (uint64_t i = 2; i < hbound; ++i) {
